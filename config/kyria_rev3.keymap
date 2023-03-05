@@ -20,7 +20,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp PLUS>
+                , <&macro_tap &kp C_AC_ZOOM_IN>
                 , <&macro_release &kp LCTRL>
                 ;
         };
@@ -30,7 +30,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp MINUS>
+                , <&macro_tap &kp C_AC_ZOOM_OUT>
                 , <&macro_release &kp LCTRL>
                 ;
         };
@@ -74,7 +74,7 @@
 	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &trans    &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp &macro_zoom_in &macro_zoom_out &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
 };
