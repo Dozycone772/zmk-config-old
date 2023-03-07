@@ -49,8 +49,8 @@
 			bindings = <
 	&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&kp LSHFT &kp A &kp S &kp D &kp F &kp G                                              &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LCTRL &kp Z &kp X &kp C &kp V &kp B &none &kp V        &kp V &none &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	           &kp ESC &kp LGUI &kp LALT &kp RET &kp ESC        &tog RAISE &kp SPACE  &tog LOWER &kp FSLH &kp BSLH
+	&kp LCTRL &kp Z &kp X &kp C &kp V &kp B &none &kp V        &kp V &none &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
+	           &kp ESC &kp LGUI &kp LALT &kp RET &kp ESC        &mo RAISE &kp SPACE  &mo LOWER &kp FSLH &kp BSLH
 			>;
 
 			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -58,13 +58,13 @@
 		
 		RAISE_layer {
 			bindings = <
-	&trans &trans &trans &kp UP &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
+	&kp GRAVE &trans &trans &kp UP &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
 	&trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans                              &kp PG_DN &kp N4 &kp N5 &kp N6 &kp MINUS &kp DEL
 	&trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans &kp N1 &kp N2 &kp N3 &kp EQUAL &trans
 	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &kp HOME     &kp END
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		LOWER_layer {
