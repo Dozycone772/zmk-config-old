@@ -38,9 +38,6 @@
     };
 };
 
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
-
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -49,8 +46,8 @@
 			bindings = <
 	&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
 	&kp LSHFT &kp A &kp S &kp D &kp F &kp G                                              &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&mt LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp V        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RPAR
-	           &kp ESC &kp LALT &mo LOWER &kp BSPC &kp LCTRL        &kp ENTER &kp SPACE  &mo RAISE &kp FSLH &kp BSLH
+	&mt LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RPAR
+	           &kp LG(L) &kp LALT &mo LOWER &kp LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE  &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
 		};
