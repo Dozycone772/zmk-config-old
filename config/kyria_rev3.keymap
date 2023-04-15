@@ -6,8 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/backlight.h> // remove later, should not be needed
 
 #define BASE 0
 #define RAISE 1
@@ -53,18 +53,16 @@
 	           &kp ESC &kp LALT &mo LOWER &kp BSPC &kp LCTRL        &kp ENTER &kp SPACE  &mo RAISE &kp FSLH &kp BSLH
 			>;
 
-			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		
 		RAISE_layer {
 			bindings = <
-	&kp GRAVE &trans &trans &kp UP &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
+	&trans &bt_SEL 0 &bt_SEL 1 &bt_SEL 2 &bt_SEL 3 &BT_CLR                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
 	&trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans                              &kp PG_DN &kp N4 &kp N5 &kp N6 &kp MINUS &kp DEL
 	&trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans &kp N1 &kp N2 &kp N3 &kp EQUAL &trans
 	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &kp HOME     &kp END
 			>;
 
-			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		LOWER_layer {
@@ -75,7 +73,6 @@
 	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &bt BT_NXT    &bt BT_CLR
 			>;
 
-			sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
 };
