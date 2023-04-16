@@ -64,10 +64,10 @@
 
 		LOWER_layer {
 			bindings = <
-	&kp C_AC_ZOOM_IN &kp C_AC_ZOOM_OUT &trans &trans &trans &macro_zoom_in                              &trans &trans &trans &trans &trans &trans
-	&kp K_SCROLL_UP &kp K_SCROLL_DOWN &trans &trans &trans &macro_zoom_out                             &trans &trans &trans &trans &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans
-	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &bt BT_NXT    &bt BT_CLR
+	&trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                              &kp CARET &kp AMPS &kp ASTRK &trans &trans &trans
+	&kp DEL &kp F2 &kp F4 &kp F5 &kp F12 &trans                             &trans &kp UNDER &trans &trans &trans &trans
+	&trans &trans &trans &kp PG_DN &kp PG_UP &trans &trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans
+	           &trans  &trans   &trans        &trans &trans  &trans &trans    &trans    &trans    &trans
 			>;
 
 		};
