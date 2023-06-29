@@ -14,31 +14,6 @@
 #define LOWER 2
 
 / {
-    macros {
-        macro_zoom_in: macro_zoom_in {
-            label = "ZM_ZoomIN";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C_AC_ZOOM_IN>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-	macro_zoom_out: macro_zoom_out {
-            label = "ZM_ZoomOUT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C_AC_ZOOM_OUT>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
-};
-
-/ {
 	keymap {
 		compatible = "zmk,keymap";
 
