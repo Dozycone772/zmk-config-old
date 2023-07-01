@@ -44,7 +44,7 @@
 		compatible = "zmk,combos";
 			combo_home {
 			timeout-ms = <50>;
-			key-positions = <19, 20>;
+			key-positions = <19 20>;
 			bindings = <&kp HOME>;
 			layers = <1>;
 		};
