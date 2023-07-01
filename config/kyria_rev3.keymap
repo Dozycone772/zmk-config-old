@@ -14,8 +14,8 @@
 #define LOWER 2
 
 / {
-	behaviors {
-		lh_pht: left_hand_positional_hold_tap {
+	behaviors {										
+		lh_pht: left_hand_positional_hold_tap {		// Sets up the positional hold tap behaviour for home row mods - left hand
 			compatible = "zmk,behavior-hold-tap";
 			label = "LEFT_POSITIONAL_HOLD_TAP";
 			#binding-cells = <2>;
@@ -24,10 +24,10 @@
 			quick-tap-ms = <200>;
 			global-quick-tap;
 			bindings = <&kp>, <&kp>;
-			hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 38 39 45 46 47 48 49>;
+			hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 38 39 45 46 47 48 49>; 
 		};
 
-		rh_pht: right_hand_positional_hold_tap {
+		rh_pht: right_hand_positional_hold_tap {	// Sets up the positional hold tap behaviour for home row mods - right hand
 			compatible = "zmk,behavior-hold-tap";
 			label = "RIGHT_POSITIONAL_HOLD_TAP";
 			#binding-cells = <2>;
@@ -46,7 +46,7 @@
 		default_layer {
 			bindings = <
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
-				&kp LSHFT &kp A &kp S &lh_pht LSHFT D &kp F &kp G                                              &kp H &kp J  &rh_pht RSHFT K     &kp L   &kp SEMI &kp SQT
+				&kp CAPS &kp A &kp S &lh_pht LSHFT D &kp F &kp G                                              &kp H &kp J  &rh_pht RSHFT K     &kp L   &kp SEMI &kp SQT
 				&mt LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RPAR
 	      					&kp LG(L) &kp LALT &mo LOWER &kp LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE  &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
