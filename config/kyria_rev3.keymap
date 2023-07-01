@@ -27,7 +27,7 @@
 			hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 38 39 45 46 47 48 49>; 
 		};
 
-		rh_pht: right_hand_positional_hold_tap {	// Sets up the positional hold tap behaviour for home rowht hand
+		rh_pht: right_hand_positional_hold_tap {	// Sets up the positional hold tap behaviour for home right hand
 			compatible = "zmk,behavior-hold-tap";
 			label = "RIGHT_POSITIONAL_HOLD_TAP";
 			#binding-cells = <2>;
@@ -65,7 +65,7 @@
 			combo_paste {
 			timeout-ms = <50>;
 			key-positions = <15 16>;
-			bindings = <&kp LC(V)>;
+			bindings = <&kp LC(Vo)>;
 		};
 
 	};
