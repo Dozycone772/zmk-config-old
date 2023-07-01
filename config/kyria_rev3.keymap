@@ -48,6 +48,13 @@
 			bindings = <&kp HOME>;
 			layers = <1>;
 		};
+		
+			combo_end {
+			timeout-ms = <50>;
+			key-positions = <21 22>;
+			bindings = <&kp END>;
+			layers = <1>;
+		};
 	};
 
 	keymap {
@@ -66,7 +73,7 @@
 		RAISE_layer {
 			bindings = <
 				&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_NXT &bt BT_CLR                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
-				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &kp HOME &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp END
+				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
 				&trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans &trans                       &trans &trans &trans &kp MINUS &kp N2 &kp N3 &kp EQUAL &trans
 				            &trans  &trans   &trans        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
 			>;
