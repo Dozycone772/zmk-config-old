@@ -56,12 +56,17 @@
 			layers = <1>;
 		};
 
+			combo_cut {
+			timeout-ms = <50>;
+			key-positions = <13 14>;
+			bindings = <&kp LC(X)>;
+		};
+
 			combo_copy {
 			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&kp LC(C)>;
 		};
-
 			combo_paste {
 			timeout-ms = <50>;
 			key-positions = <15 16>;
