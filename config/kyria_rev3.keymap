@@ -70,7 +70,7 @@
 			combo_paste {
 			timeout-ms = <50>;
 			key-positions = <15 16>;
-			bindings = <&kp LC(Vo)>;
+			bindings = <&kp LC(V)>;
 		};
 
 	};
