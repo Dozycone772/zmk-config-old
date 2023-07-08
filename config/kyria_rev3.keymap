@@ -13,6 +13,10 @@
 #define RAISE 1
 #define LOWER 2
 
+&mt {
+	tapping-term-ms = <30>;
+};
+
 / {
 	combos {
 		compatible = "zmk,combos";
