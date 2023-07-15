@@ -14,7 +14,7 @@
 #define LOWER 2
 
 &mt {
-	tapping-term-ms = <20>;
+	tapping-term-ms = <50>;
 };
 
 / {
