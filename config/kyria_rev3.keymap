@@ -69,6 +69,18 @@
 			key-positions = <20 21>;
 			bindings = <&kp LSHFT>;
 		};	
+
+			combo_LGUI {
+			timeout-ms = <20>;
+			key-positions = <49 50>;
+			bindings = <&kp LGUI>;
+		};	
+
+			combo_alt {
+			timeout-ms = <20>;
+			key-positions = <14 16>;
+			bindings = <&kp LALT>;
+		};	
 };
 
 	keymap {
