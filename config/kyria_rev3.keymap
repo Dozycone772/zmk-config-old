@@ -102,7 +102,7 @@
 				&trans &trans &trans &trans &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
 				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &kp LC(LS(LEFT)) &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LC(LS(RIGHT))
 				&trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans &trans                       &trans &trans &trans &kp MINUS &kp N2 &kp N3 &kp EQUAL &trans
-				            &trans  &trans   &mo LOWER        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
+				            &trans  &trans   &mo ADJUST        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
 			>;
 
 		};
@@ -112,7 +112,7 @@
 				&trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                              &kp CARET &kp AMPS &kp ASTRK &trans &trans &trans
 				&kp DEL &kp F2 &kp F4 &kp F5 &kp F12 &trans                             &trans &kp UNDER &trans &trans &trans &trans
 				&trans &trans &trans &kp PG_DN &kp PG_UP &trans &trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans
-	           				&trans  &trans   &trans        &trans &trans  &trans &trans    &mo RAISE    &trans    &trans
+	           				&trans  &trans   &trans        &trans &trans  &trans &trans    &mo ADJUST    &trans    &trans
 			>;
 
 		};
