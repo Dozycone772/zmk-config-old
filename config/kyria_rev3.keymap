@@ -28,6 +28,14 @@
 			tapping-term-ms = <200>;
 			bindings = <&mt LSHFT LPAR>, <&kp LBKT>, <&kp LBRC>;
 		};
+		
+		td_mtrs: tap_dance_triple_brackets_shift_right {
+			compatible = "zmk,behavior-tap-dance";
+			label = "tap_dance_triple_brackets_shift_right";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&mt RSHFT RPAR>, <&kp RBKT>, <&kp RBRC>;
+		};
 	};
 
 	combos {
@@ -102,7 +110,7 @@
 			bindings = <
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
 				&caps_word &kp A &kp S &kp D &kp F &kp G         								&kp H &kp J &kp K     &kp L   &kp 	SEMI &kp SQT
-				&td_mtls &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt LSHFT RPAR
+				&td_mtls &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_mtrs
 	      					&kp LG(L) &kp LALT &mo LOWER &mt LSHFT LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
@@ -113,7 +121,7 @@
 				&trans &trans &trans &trans &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
 				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &kp HOME &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp END
 				&trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans &trans                       &trans &trans &trans &kp MINUS &kp N2 &kp N3 &kp EQUAL &trans
-				            &trans  &trans   &mo ADJUST        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
+				            &trans  &trans   &mo ADJUST        &trans &trans                       &trans &trans    &trans    &kp HOME     &kp END
 			>;
 
 		};
