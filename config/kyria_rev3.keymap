@@ -13,6 +13,7 @@
 #define RAISE 1
 #define LOWER 2
 #define	ADJUST 3
+#define EXCEL 4
 
 &mt {
 	tapping-term-ms = <200>;
@@ -62,7 +63,7 @@
 			combo_leftshift {
 			timeout-ms = <20>;
 			key-positions = <14 15>;
-			bindings = <&kp LSHFT>;
+			bindings = <&mo EXCEL>;
 		};	
 
 			combo_rightshift {
@@ -100,7 +101,7 @@
 		RAISE_layer {
 			bindings = <
 				&trans &trans &trans &trans &trans &trans                              &kp PG_UP &kp N7 &kp N8 &kp N9 &kp N0 &trans
-				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &kp LC(LS(LEFT)) &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LC(LS(RIGHT))
+				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                             &kp HOME &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp END
 				&trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans &trans                       &trans &trans &trans &kp MINUS &kp N2 &kp N3 &kp EQUAL &trans
 				            &trans  &trans   &mo ADJUST        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
 			>;
@@ -123,6 +124,15 @@
 				&trans &kp N1 &kp N2 &kp N3 &kp N4 &kp Q                             &kp LC(LS(LEFT)) &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LC(LS(RIGHT))
 				&trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans &trans                       &trans &trans &trans &kp MINUS &kp N2 &kp N3 &kp EQUAL &trans
 				            &trans  &trans   &trans        &kp LGUI &trans                       &trans &trans    &trans    &kp HOME     &kp END
+			>;
+		};
+
+		EXCEL_layer {
+			bindings = <
+				&trans &trans &trans &trans &trans &trans                              &trans &kp N7 &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans &trans &trans
+				            &trans  &trans   &trans        &trans &trans                       &trans &trans    &trans    &trans     &trans
 			>;
 		};
 	};
