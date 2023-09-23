@@ -20,6 +20,16 @@
 };
 
 / {
+	behaviors {
+		td_mtls: tap_dance_triple_brackets_shift_left {
+			compatible = "zmk,behavior-tap-dance";
+			label = "tap_dance_triple_brackets_shift_left";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&mt LSHFT LPAR>, <&kp LBKT>, <&kp LBRC>;
+		}
+	};
+
 	combos {
 		compatible = "zmk,combos";
 			combo_home {
@@ -83,7 +93,7 @@
 			key-positions = <14 16>;
 			bindings = <&kp LALT>;
 		};	
-};
+	};
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -92,7 +102,7 @@
 			bindings = <
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
 				&caps_word &kp A &kp S &kp D &kp F &kp G         								&kp H &kp J &kp K     &kp L   &kp 	SEMI &kp SQT
-				&mt LSHFT LPAR &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt LSHFT RPAR
+				&td_mtls &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt LSHFT RPAR
 	      					&kp LG(L) &kp LALT &mo LOWER &mt LSHFT LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
