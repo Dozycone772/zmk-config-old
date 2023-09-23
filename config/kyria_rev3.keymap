@@ -27,7 +27,7 @@
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&mt LSHFT LPAR>, <&kp LBKT>, <&kp LBRC>;
-		}
+		};
 	};
 
 	combos {
