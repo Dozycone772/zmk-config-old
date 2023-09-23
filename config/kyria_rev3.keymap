@@ -54,8 +54,8 @@
 			bindings
 				= <&macro_tap &kp d &kp y &kp w &kp LS(t) &kp m &kp l &kp m &kp LS(f)>
 				; 
-		}
-	}
+		};
+	};
 
 	combos {
 		compatible = "zmk,combos";
