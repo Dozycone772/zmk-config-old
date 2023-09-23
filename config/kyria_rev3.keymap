@@ -14,6 +14,7 @@
 #define LOWER 2
 #define	ADJUST 3
 #define EXCEL 4
+#define SLIP 5
 
 &mt {
 	tapping-term-ms = <200>;
@@ -97,16 +98,17 @@
 			bindings = <&kp LC(Y)>;
 		};
 
-			combo_leftshift {
+			combo_excellayer {
 			timeout-ms = <20>;
 			key-positions = <14 15>;
 			bindings = <&mo EXCEL>;
 		};	
 
-			combo_rightshift {
+			combo_sliplayer {
 			timeout-ms = <20>;
-			key-positions = <20 21>;
-			bindings = <&kp LSHFT>;
+			key-positions = <19 21>;
+			layers = <4>;
+			bindings = <&mo SLIP>;
 		};	
 
 			combo_LGUI {
@@ -168,8 +170,17 @@
 			bindings = <
 				&trans &trans &trans &trans &trans &trans                              &kp TAB &kp N7 &kp N8 &kp N9 &kp ASTRK &kp ESC
 				&trans &trans &trans &trans &trans &trans                             &kp PLUS &kp N4 &kp N5 &kp N6 &kp DOT &kp SQT
-				&kp LPAR &slippw &trans &trans &trans &trans &trans &trans                       &trans &trans &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH &kp RPAR
+				&kp LPAR &trans &trans &trans &trans &trans &trans &trans                       &trans &trans &kp MINUS &kp N1 &kp N2 &kp N3 &kp FSLH &kp RPAR
 				            &trans  &trans   &trans        &trans &trans                       &kp ENTER &kp SPACE    &kp N0    &kp EQUAL     &trans
+			>;
+		};
+
+		SLIP_layer {
+			bindings = <
+				&trans &trans &trans &trans &trans &trans                              &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans &trans &trans
+				            &trans  &trans   &trans        &trans &trans                       &trans &slippw    &trans    &trans     &trans
 			>;
 		};
 	};
