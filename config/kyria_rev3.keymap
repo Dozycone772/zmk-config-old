@@ -52,8 +52,8 @@
 			label = "SLIPPW";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			wait-ms = <10>;
-			tap-ms = <10>;
+			wait-ms = <5>;
+			tap-ms = <5>;
 			bindings
 				= <&macro_tap &kp D &kp Y &kp W &kp LS(T) &kp M &kp L &kp M &kp LS(F)>
 				; 
@@ -63,8 +63,8 @@
 			label = "PWCUSERNAME";
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			wait-ms = <10>;
-			tap-ms = <10>;
+			wait-ms = <5>;
+			tap-ms = <5>;
 			bindings
 				= <&macro_tap &kp R &kp Y &kp A &kp N &kp DOT &kp S &kp DOT &kp B &kp R &kp O &kp W &kp N &kp AT &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M>
 				; 
