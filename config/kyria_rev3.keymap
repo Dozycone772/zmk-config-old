@@ -56,6 +56,15 @@
 				= <&macro_tap &kp D &kp Y &kp W &kp LS(T) &kp M &kp L &kp M &kp LS(F)>
 				; 
 		};
+
+		pwcunm: pwcu {
+			label = "PWCUSERNAME";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_tap &kp R &kp Y &kp A &kp N &kp DOT &kp S &kp DOT &kp B &kp R &kp O &kp W &kp N &kp AT &kp P &kp W &kp C &kp DOT &kp C &kp O &kp M>
+				; 
+		};
 	};
 
 	combos {
@@ -180,7 +189,7 @@
 				&trans &trans &trans &trans &trans &trans                              &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans &trans &trans
-				            &trans  &trans   &trans        &trans &trans                       &trans &slippw    &trans    &trans     &trans
+				            &trans  &trans   &trans        &trans &trans                       &trans &slippw    &pwcunm    &trans     &trans
 			>;
 		};
 	};
