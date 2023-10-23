@@ -40,11 +40,20 @@
 		
 		td_minund: tap_dance_minus_underscore {
 			compatible = "zmk,behavior-tap-dance";
-			label = "tap_dance_triple_minus_underscore";
+			label = "tap_dance_minus_underscore";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
 			bindings = <&kp MINUS>, <&kp UNDER>;
 		};
+
+		td_ctsft: tap_dance_ctrlshift {
+			compatible = "zmk,behavior-tap-dance";
+			label = "tap_dance_ctrlshift";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <&kp LCTRL>, <&kp LC(LSHFT)>;
+		};
+
 	};
 
 	macros {
@@ -145,7 +154,7 @@
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
 				&caps_word &kp A &kp S &kp D &kp F &kp G         								&kp H &kp J &kp K     &kp L   &kp 	SEMI &kp SQT
 				&td_mtls &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_mtrs
-	      					&kp LG(L) &kp LALT &mo LOWER &mt LSHFT LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
+	      					&kp LG(L) &kp LALT &mo LOWER &mt LSHFT LC(BSPC) &td_ctsft        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
 		};
