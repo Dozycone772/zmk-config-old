@@ -27,7 +27,7 @@
 			label = "tap_dance_triple_brackets_shift_left";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&mt LSHFT LPAR>, <&kp LBKT>, <&kp LBRC>;
+			bindings = <&kp LSHFT>, <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
 		};
 		
 		td_mtrs: tap_dance_triple_brackets_shift_right {
