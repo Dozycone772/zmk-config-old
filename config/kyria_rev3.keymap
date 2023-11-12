@@ -154,7 +154,7 @@
 				&kp TAB &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp ESC
 				&caps_word &kp A &kp S &kp D &kp F &kp G         								&kp H &kp J &kp K     &kp L   &kp 	SEMI &kp SQT
 				&td_mtls &kp Z &kp X &kp C &kp V &kp B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &td_mtrs
-	      					&kp LG(L) &kp LALT &mo LOWER &mt LSHFT LC(BSPC) &td_ctsft        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
+	      					&kp LG(L) &kp LALT &mo LOWER &kp LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
 		};
