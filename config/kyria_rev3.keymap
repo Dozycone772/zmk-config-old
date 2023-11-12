@@ -55,9 +55,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <13>;
-		}
-
-
+		};
 	};
 
 	macros {
