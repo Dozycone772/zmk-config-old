@@ -22,20 +22,20 @@
 
 / {
 	behaviors {
-		td_mtls: tap_dance_triple_brackets_shift_left {
+		td_mtls: tap_dance_triple_brackets_left {
 			compatible = "zmk,behavior-tap-dance";
-			label = "tap_dance_triple_brackets_shift_left";
+			label = "tap_dance_triple_brackets_left";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp LSHFT>, <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
+			bindings = <&kp LPAR>, <&kp LBKT>, <&kp LBRC>;
 		};
 		
-		td_mtrs: tap_dance_triple_brackets_shift_right {
+		td_mtrs: tap_dance_triple_brackets_right {
 			compatible = "zmk,behavior-tap-dance";
-			label = "tap_dance_triple_brackets_shift_right";
+			label = "tap_dance_triple_brackets_right";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp RSHFT>, <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;
+			bindings = <&kp RPAR>, <&kp RBKT>, <&kp RBRC>;
 		};
 		
 		td_minund: tap_dance_minus_underscore {
@@ -83,10 +83,16 @@
 
 	combos {
 		compatible = "zmk,combos";
-			combo_copy {
+			combo_leftbrackets {
 			timeout-ms = <20>;
 			key-positions = <13 14>;
-			bindings = <&kp LC(C)>;
+			bindings = <&td_mtls>;
+		};
+
+			combo_rightbrackets {
+			timeout-ms = <20>;
+			key-positions = <21 22>;
+			bindings = <&td_mtrs>;
 		};
 
 			combo_excellayer {
@@ -116,7 +122,7 @@
 			bindings = <
 				&kp TAB &kp Q &kp W &kp E &pht LC(R) R &pht LC(T) T                                                &pht LC(Y) Y &pht LC(U) U  &pht LC(I) I     &pht LC(O) O   &pht LC(P) P    &kp ESC
 				&caps_word &pht LC(A) A &pht LC(S) S &pht LC(D) D &pht LC(F) F &kp G         								&kp H &kp J &kp K     &pht LC(L) L   &kp 	SEMI &kp SQT
-				&td_mtls &pht LC(Z) Z &pht LC(X) X &pht LC(C) C &pht LC(V) V &pht LC(B) B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &pht LC(N) N &kp M  &kp COMMA &kp DOT &kp FSLH &td_mtrs
+				&kp LSHFT &pht LC(Z) Z &pht LC(X) X &pht LC(C) C &pht LC(V) V &pht LC(B) B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &pht LC(N) N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	      					&kp LG(L) &kp LALT &mo LOWER &kp LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
