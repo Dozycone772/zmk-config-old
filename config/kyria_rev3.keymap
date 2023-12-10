@@ -46,7 +46,6 @@
 			bindings = <&kp MINUS>, <&kp UNDER>;
 		};
 
-
 		pht: positional_hold_tap {
 			compatible = "zmk,behavior-hold-tap";
 			label = "POSITIONAL_HOLD_TAP";
@@ -84,42 +83,10 @@
 
 	combos {
 		compatible = "zmk,combos";
-			combo_home {
-			timeout-ms = <20>;
-			key-positions = <19 20>;
-			bindings = <&kp HOME>;
-			layers = <1>;
-		};
-		
-			combo_end {
-			timeout-ms = <20>;
-			key-positions = <21 22>;
-			bindings = <&kp END>;
-			layers = <1>;
-		};
-
 			combo_copy {
 			timeout-ms = <20>;
 			key-positions = <13 14>;
 			bindings = <&kp LC(C)>;
-		};
-		
-			combo_paste {
-			timeout-ms = <20>;
-			key-positions = <15 16>;
-			bindings = <&kp LC(V)>;
-		};
-		
-			combo_undo {
-			timeout-ms = <20>;
-			key-positions = <26 27>;
-			bindings = <&kp LC(Z)>;
-		};
-
-			combo_redo {
-			timeout-ms = <20>;
-			key-positions = <27 28>;
-			bindings = <&kp LC(Y)>;
 		};
 
 			combo_excellayer {
@@ -139,12 +106,6 @@
 			timeout-ms = <20>;
 			key-positions = <48 49>;
 			bindings = <&kp LGUI>;
-		};	
-
-			combo_alt {
-			timeout-ms = <20>;
-			key-positions = <14 16>;
-			bindings = <&kp LALT>;
 		};	
 	};
 
