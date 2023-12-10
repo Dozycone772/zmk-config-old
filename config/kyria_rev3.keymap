@@ -69,6 +69,17 @@
 				; 
 		};
 
+		msdunm: msdunm {
+			label = "MSDUSERNAME";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <5>;
+			tap-ms = <5>;
+			bindings
+				= <&macro_tap &kp R &kp B &kp R &kp O &kp W &kp N0 &kp N4 &kp N6 &kp TAB>
+				; 
+		};
+
 		pwcunm: pwcu {
 			label = "PWCUSERNAME";
 			compatible = "zmk,behavior-macro";
@@ -171,7 +182,7 @@
 				&trans &trans &trans &trans &trans &trans                              &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans                             &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans &trans &trans
-				            &trans  &trans   &trans        &trans &trans                       &trans &slippw    &pwcunm    &trans     &trans
+				            &trans  &trans   &trans        &trans &trans                       &msdunm &slippw    &pwcunm    &trans     &trans
 			>;
 		};
 	};
