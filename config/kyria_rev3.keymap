@@ -131,9 +131,9 @@
 
 		default_layer {
 			bindings = <
-				&kp TAB &kp Q &kp W &kp E &pht LC(R) R &pht LC(T) T                                                &pht LC(Y) Y &pht LC(U) U  &pht LC(I) I     &pht LC(O) O   &pht LC(P) P    &kp ESC
-				&caps_word &pht LC(A) A &pht LC(S) S &pht LC(D) D &pht LC(F) F &kp G         								&kp H &kp J &kp K     &pht LC(L) L   &kp 	SEMI &kp SQT
-				&kp LSHFT &pht LC(Z) Z &pht LC(X) X &pht LC(C) C &pht LC(V) V &pht LC(B) B &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &pht LC(N) N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+				&kp TAB &kp Q &kp W &kp F &pht LC(P) P &pht LC(B) B                                                &pht LC(J) J &pht LC(L) L  &pht LC(U) U     &pht LC(Y) Y   &kp SEMI    &kp ESC
+				&caps_word &pht LC(A) A &pht LC(R) R &pht LC(S) S &pht LC(T) T &kp G         								&kp M &kp N &kp E     &pht LC(I) I   &kp O &kp SQT
+				&kp LSHFT &pht LC(Z) Z &pht LC(X) X &pht LC(C) C &pht LC(D) D &pht LC(V) V &kp BSPC &kp LC(LA(DEL))        &kp PLUS &kp EQUAL &pht LC(K) K &kp H  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	      					&kp LG(L) &kp LALT &mo LOWER &kp LC(BSPC) &kp LCTRL        &kp ENTER &kp SPACE &mo RAISE &kp LC(PG_UP) &kp LC(PG_DN)
 			>;
 
