@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define RAISE 1
@@ -153,7 +152,7 @@
 		LOWER_layer {
 			bindings = <
 				&trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                              &kp CARET &kp AMPS &kp ASTRK &trans &trans &trans
-				&kp DEL &kp F2 &kp F4 &kp F5 &kp F12 &trans				                        &trans &trans &trans &trans &trans &trans
+				&kp DEL &kp F2 &kp F4 &kp F5 &mkp LCLK &trans				                        &trans &trans &trans &trans &trans &trans
 				&trans &out OUT_TOG &bt BT_NXT &kp PG_DN &kp PG_UP &trans &trans &trans  &trans &trans &trans &trans &trans &trans &trans &trans
 	           				&trans  &trans   &trans        &trans &trans  &trans &trans    &mo ADJUST    &trans    &trans
 			>;
